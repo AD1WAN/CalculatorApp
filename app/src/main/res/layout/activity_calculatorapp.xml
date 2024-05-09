@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Calculatorapp">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/ac"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="AC"
+                style="@style/number" />
+        <ImageView
+            android:id="@+id/backspace"
+            android:layout_height="72dp"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/backspace_24"
+            android:scaleType="center"
+            style="@style/number" />
+
+        <TextView
+            android:id="@+id/modulo"
+            android:layout_height="72dp"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="%"
+            style="@style/number" />
+
+            <TextView
+                android:id="@+id/divide"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape"
+                android:text="/"
+                android:layout_gravity="center"
+                style="@style/number" />
+        </TableRow>
+
+
+        <TableRow>
+            
+            <TextView
+                android:id="@+id/seven"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="7"
+                style="@style/number" />
+            <TextView
+                android:id="@+id/eight"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="8"
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/nine"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="9"
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/multiply"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape"
+                android:text="x"
+                android:layout_gravity="center"
+                style="@style/number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="4"
+                style="@style/number" />
+            <TextView
+                android:id="@+id/five"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="5"
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="6"
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/minus"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape"
+                android:text="-"
+                android:layout_gravity="center"
+                style="@style/number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="1"
+                style="@style/number" />
+            <TextView
+                android:id="@+id/two"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="2"
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="3"
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape"
+                android:text="+"
+                android:layout_gravity="center"
+                style="@style/number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/changesign"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="+/-"
+                style="@style/number" />
+            <TextView
+                android:id="@+id/zero"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="0"
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/decimal"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="."
+                style="@style/number" />
+
+            <TextView
+                android:id="@+id/equals"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shapered"
+                android:text="="
+                android:layout_gravity="center"
+                style="@style/number" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="48sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.8"
+        tools:text="12345"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tableLayout"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        tools:text="1245" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:layout_marginStart="20dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
